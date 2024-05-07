@@ -1,1 +1,8 @@
-this is a read me
+# this is a read me
+There are various datasets that can be used for endoscopic imaging. The limiting factor for this project however, is that the dataset has to provide depth image data as the expected or ground-truth data for the endoscopic images. As the primary objective of the project, the relationship between the color and depth image for the translation process means that the dataset must include color-depth pairs of endoscopic images with depth. Additionally, to compare your estimated surface point-clouds to an original model (ex. the 3D ground-truth of their depth data), you will have to select a real-world dataset that includes this information. Also, depending on the format of this data and its overall size, some datasets may better suit your project. For two example datasets, the following links provide datasets from (Ozyoruk et al., 2021) and (Recasens et al., 2021).
+
+Mono-Depth-and-Motion (~10GB Individual Files set) – Note depth is in 16-bit PNG
+EndoSLAM Dataset (~9 GB)
+There are additional datasets that could potentially be used within the project; however, note the requirements needed for the project and that the dataset will have to include them. Note that different datasets that you come across in your related work research may include difficult conditions such as medical instruments, very low resolution images, visual occlusions, or other complications. It is recommended that you try to find endoscopic sequences that represent clear and visible 3D structures.
+
+Important Note: For all real-world data, you do not have to perform a complete odometry track or a complete 3D model of the entire sequence. Since the format and quality of the data are unknown, you may have to preprocess some data including resizing, removing distortion, or other operations.
